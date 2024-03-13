@@ -12,6 +12,21 @@ public class LightBoard
     { /* to be implemented in part (a) */ 
 
         lights = new boolean[numRows][numCols];
+        for( int r = 0; r < lights.length; r++ )
+        {
+            for( int c = 0; c < lights[r].length; c++ )
+            {
+            
+                double rand = Math.random();
+                if( rand < .4 )
+                {
+                    lights[r][c] = true;
+                }
+                else{
+                    lights[r][c] = false;
+                }
+            }
+        }
     }
     
     /** Evaluates a light in row index row and column index col and returns a status
@@ -21,7 +36,7 @@ public class LightBoard
     public boolean evaluateLight(int row, int col)
     { /* to be implemented in part (b) */ 
         int lightOn = 0;
-        for( int x = 0; x < lights.length-2; x++ )//what
+        for( int x = 0; x < lights.length-2; x++ )//what is this range this is ridiculous
         {
             if( lights[row][x] )
             {
