@@ -4,7 +4,7 @@ public class Sorting {
         arr = a;
     }
     
-    public int[] selectionSort(int[] arr){
+    public int[] selectionSort(int[] arr){ // selection sort
         for( int x = 0; x < arr.length-1; x++ ){
             int index = x;
             for( int y = x+1; y < arr.length; y++ ){
@@ -19,7 +19,7 @@ public class Sorting {
         return arr;
     }
 
-    public int[] insertionSort(int[] arr){
+    public int[] insertionSort(int[] arr){ // insertion sort
         for( int x = 1; x < arr.length; x++ ){
             int move = x-1;
             int temp = arr[x];
@@ -32,7 +32,7 @@ public class Sorting {
         return arr;
     }
 
-    public int binarySearch( int goal ){
+    public int binarySearch( int goal ){ // binary search
         int low = 0;
         int high = arr.length-1;
         int mid;
@@ -52,7 +52,7 @@ public class Sorting {
         return -1;
     }
 
-    public static int[] merge(int[] arr1, int[] arr2)
+    public static int[] merge(int[] arr1, int[] arr2) // merge sort
 	{
 			int[] result = new int[arr1.length+arr2.length];
 
@@ -91,7 +91,7 @@ public class Sorting {
 		return result;
 	}
 
-    public int partition(int[] arr, int left, int right)
+    public int partition(int[] arr, int left, int right)//quick sort.
 {
   int pivot = left;
   int leftBound = left + 1;
