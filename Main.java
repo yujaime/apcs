@@ -13,6 +13,20 @@ public class Main {
         System.out.print("Width: " + rect2.getWidth() + "," + "Height: " + rect2.getHeight() + ",");
         System.out.print("Area: " + rect2.getArea() + "," + "Perimeter: " + rect2.getPerimeter());
 
+
+        System.out.println();
+        System.out.println("Testing Rect1 Set Dimensions: ");
+        rect1.setDimensions(10,20);
+        System.out.print("Width: " + rect1.getWidth() + "," + "Height: " + rect1.getHeight() + ",");
+        System.out.print("Area: " + rect1.getArea() + "," + "Perimeter: " + rect1.getPerimeter());
+
+        System.out.println();
+        System.out.println("Testing Rect2 Set Dimensions: ");
+        rect2.setDimensions(3);
+        System.out.print("Width: " + rect2.getWidth() + "," + "Height: " + rect2.getHeight() + ",");
+        System.out.print("Area: " + rect2.getArea() + "," + "Perimeter: " + rect2.getPerimeter());
+
+
     }
 
   

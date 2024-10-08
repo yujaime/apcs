@@ -38,6 +38,16 @@ public class Rectangle {
         return (2 * width) + (2 * height);
     }
 
+    public void setDimensions( double w, double h ){
+        width = w;
+        height = h;
+    }
+
+    public void setDimensions( double size ){
+        width = size;
+        height = size;
+    }
+
 }
 
 
