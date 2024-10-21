@@ -46,7 +46,4 @@ public class RockPaperScissors {
               break;
       }
     }
-    public static int RPS(){
-        return (int)(Math.random()*3);
-    }
 }
